@@ -21,7 +21,15 @@ namespace EtlSystem.Sinks
                 var recordCount = 0;
                 foreach (var item in data)
                 {
-                    writer.WriteLine(item.ToString());
+                    if (item is Dictionary<string, string> dict)
+                    {
+                        var line = string.Join(", ", dict.Select(kv => $"{kv.Key}={kv.Value}"));
+                        writer.WriteLine(line);
+                    }
+                    else
+                    {
+                        writer.WriteLine(item?.ToString());
+                    }
                     recordCount++;
                 }
 
