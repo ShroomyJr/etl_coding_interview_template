@@ -168,7 +168,6 @@ _NCrunch_*
 project.lock.json
 project.fragment.lock.json
 artifacts/
-**/Properties/launchSettings.json
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
@@ -200,6 +199,7 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+.vs/*
 
 # Chutzpah Test files
 _Chutzpah*
@@ -447,7 +447,6 @@ MigrationBackup/
 .ionide/
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -464,3 +463,6 @@ data/processed/*.xlsx
 # Logs
 logs/
 *.log
+
+# Output
+output_basic.txt

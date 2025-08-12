@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Python ETL Example",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/python_project/example.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/python_project",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/python_project"
+            },
+            "stopOnEntry": false,
+            "justMyCode": true
+        },
+        {
+            "name": "Debug .NET ETL Example",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/dotnet_project/bin/Debug/net8.0/dotnet_project.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/dotnet_project",
+            "console": "integratedTerminal",
+            "stopAtEntry": false,
+            "justMyCode": false,
+            "preLaunchTask": "build-dotnet"
+        }
+    ]
+}
