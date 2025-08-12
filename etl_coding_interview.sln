@@ -1,35 +1,22 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.2.0
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet_project", "dotnet_project\dotnet_project.csproj", "{FB3525BE-568F-5734-EA9E-092B0FE8EEF1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet_project (1)", "dotnet_project (1)", "{F381604B-BA44-E415-7586-88B0C85316DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EtlSystem", "dotnet_project\EtlSystem\EtlSystem.csproj", "{595F885F-1775-89A0-CCFE-D3CF5CC65552}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet_project", "dotnet_project\dotnet_project.csproj", "{EB8633CE-AA26-4812-805B-32323D5E21DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FB3525BE-568F-5734-EA9E-092B0FE8EEF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB3525BE-568F-5734-EA9E-092B0FE8EEF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB3525BE-568F-5734-EA9E-092B0FE8EEF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB3525BE-568F-5734-EA9E-092B0FE8EEF1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{595F885F-1775-89A0-CCFE-D3CF5CC65552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{595F885F-1775-89A0-CCFE-D3CF5CC65552}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{595F885F-1775-89A0-CCFE-D3CF5CC65552}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{595F885F-1775-89A0-CCFE-D3CF5CC65552}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{595F885F-1775-89A0-CCFE-D3CF5CC65552} = {F381604B-BA44-E415-7586-88B0C85316DD}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B83314E8-8BC6-42D2-BF00-F1DC5FDA3E99}
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB8633CE-AA26-4812-805B-32323D5E21DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8633CE-AA26-4812-805B-32323D5E21DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8633CE-AA26-4812-805B-32323D5E21DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8633CE-AA26-4812-805B-32323D5E21DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
