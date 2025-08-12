@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "dotnet_project": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}
