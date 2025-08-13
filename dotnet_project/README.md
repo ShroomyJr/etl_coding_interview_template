@@ -15,9 +15,6 @@ dotnet_project/
 ├── Sinks/
 │   ├── ISink.cs           # Generic sink interface
 │   └── TextFileSink.cs    # Text file sink implementation
-├── Examples/              # Example models (not used in implementation)
-│   ├── Contact.cs         # Example contact model
-│   └── TransformedContact.cs # Example transformed model
 ├── Orchestrator.cs        # ETL pipeline orchestrator
 ├── Program.cs             # Main application entry point
 ├── dotnet_project.csproj  # Project file with dependencies
@@ -71,7 +68,7 @@ Fully generic orchestrator that coordinates the entire process:
 
 4. **Run the application**:
    ```bash
-   dotnet run
+   cd dotnet_project && dotnet run
    ```
 
 5. **Check the output files**:
