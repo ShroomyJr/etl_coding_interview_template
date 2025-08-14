@@ -14,7 +14,9 @@ def basic_etl_example():
     print("=== Basic ETL Example ===")
 
     # SOURCE: Create CSV source for contacts data
-    source = CSVSource("../data/contacts/ms_14489.csv")
+    file_path_dir = "../data/contacts"
+    file_name = "ms_14489.csv"
+    source = CSVSource(file_path_dir, file_name)
 
     # TRANSFORM: Create basic transformer
     transformer = BasicTransformer()

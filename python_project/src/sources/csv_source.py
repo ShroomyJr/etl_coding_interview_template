@@ -2,6 +2,7 @@
 CSV Source implementation for reading data from CSV files.
 """
 
+import os
 import csv
 from typing import Any, List, Dict
 from ..orchestrator import Source
@@ -10,14 +11,16 @@ from ..orchestrator import Source
 class CSVSource(Source):
     """Source implementation for reading data from CSV files."""
 
-    def __init__(self, file_path: str):
+    def __init__(self, file_path_dir: str, file_name: str):
         """
         Initialize CSV source.
 
         Args:
-            file_path: Path to the CSV file to read
+            file_path_dir: Directory containing the CSV file
+            file_name: Name of the CSV file to read
         """
-        self.file_path = file_path
+        self.file_name = file_name
+        self.file_path = os.path.join(file_path_dir, file_name)
 
     def read(self) -> List[Dict[str, Any]]:
         """

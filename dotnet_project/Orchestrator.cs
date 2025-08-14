@@ -41,7 +41,7 @@ namespace EtlSystem
 
                 // TRANSFORM: Process data
                 Console.WriteLine("Step 2: Transforming data...");
-                var transformedData = _transformer.Transform(sourceData);
+                var transformedData = _transformer.Transform(sourceData, _source.FileName);
 
                 // SINK: Load data
                 Console.WriteLine("Step 3: Loading data to sink...");

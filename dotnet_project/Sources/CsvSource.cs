@@ -10,10 +10,14 @@ namespace EtlSystem.Sources
     public class CsvSource : ISource<object>
     {
         private readonly string _filePath;
+        public string FileName { get; }
+        public string FilePathDir { get; }
 
-        public CsvSource(string filePath)
+        public CsvSource(string filePathDir, string fileName)
         {
-            _filePath = filePath ?? throw new ArgumentNullException(nameof(filePath));
+            FilePathDir = filePathDir;
+            FileName = fileName;
+            _filePath = Path.Combine(filePathDir, fileName);
         }
 
         public IEnumerable<object> Read()
