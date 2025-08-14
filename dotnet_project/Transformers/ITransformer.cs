@@ -11,7 +11,8 @@ namespace EtlSystem.Transformers
         /// Transform a collection of input data to output data
         /// </summary>
         /// <param name="data">Input data to transform</param>
+        /// <param name="fileName">Name of the file being processed</param>
         /// <returns>Transformed output data</returns>
-        IEnumerable<TOutput> Transform(IEnumerable<TInput> data);
+        IEnumerable<TOutput> Transform(IEnumerable<TInput> data, string fileName);
     }
 }

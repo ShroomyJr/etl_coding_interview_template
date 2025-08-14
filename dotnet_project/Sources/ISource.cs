@@ -11,5 +11,8 @@ namespace EtlSystem.Sources
         /// </summary>
         /// <returns>Collection of data records</returns>
         IEnumerable<T> Read();
+
+        string FileName { get; }
+        string FilePathDir { get; }
     }
 }

@@ -29,7 +29,9 @@ namespace EtlSystem
             Console.WriteLine("=== Basic ETL Example ===");
 
             // SOURCE: Create CSV source
-            var source = new CsvSource("../data/contacts/ms_14489.csv");
+            var fileName = "ms_14489.csv";
+            var filePathDir = $"../data/contacts/";
+            var source = new CsvSource(filePathDir, fileName);
 
             // TRANSFORM: Create basic transformer
             var transformer = new BasicTransformer();

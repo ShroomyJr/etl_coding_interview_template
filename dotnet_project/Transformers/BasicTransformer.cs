@@ -5,9 +5,10 @@ namespace EtlSystem.Transformers
     /// </summary>
     public class BasicTransformer : ITransformer<object, object>
     {
-        public IEnumerable<object> Transform(IEnumerable<object> data)
+        public IEnumerable<object> Transform(IEnumerable<object> data, string fileName)
         {
             // Simple passthrough - no transformation logic
+            // fileName parameter is available for use if needed
             // Shape of 'object' passed in:
             // Dictionary<string, string> where keys are CSV headers and values are row values
             // Example:

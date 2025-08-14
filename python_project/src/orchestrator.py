@@ -52,7 +52,7 @@ class Orchestrator:
 
         # TRANSFORM: Process data
         print("Transforming data...")
-        transformed_data = self.transform.transform(data)
+        transformed_data = self.transform.transform(data, self.source.file_name)
         print(f"Transformed to {len(transformed_data)} records")
 
         # SINK: Write data
