@@ -34,7 +34,7 @@ The ETL system follows a clean architecture with three main components:
 ### 2. TRANSFORM
 - **Purpose**: Process and transform data
 - **Implementations**: 
-  - `BasicTransformer`: Applies basic transformations (uppercase strings, add timestamps, record IDs)
+  - `BasicTransformer`: Applies basic transformations
 - **Interface**: `Transform` abstract base class with `transform()` method
 
 ### 3. SINK
